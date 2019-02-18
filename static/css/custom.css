@@ -1,0 +1,26 @@
+.content-section h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.content-section p,
+ul {
+  color: #6c757d !important;
+}
+
+.pricing.campaign {
+  position: relative;
+  top: 34px;
+  z-index: 100;
+  margin-top: -87px;
+  background: linear-gradient(160deg, #9dc408 0%, #659723 100%);
+  color: white;
+}

@@ -1,0 +1,5 @@
+<section id="exampleSavings" class="container content-section">
+  {{ range where .Data.Pages "Section" "exampleSavings" | first 1 }}
+   {{ .Content }}
+  {{ end }}
+</section>
