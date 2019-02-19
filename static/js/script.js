@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   //Activating tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
       if($(window).scrollTop() < 30){
         $("nav").addClass('navbar-dark').removeClass('navbar-light');
       }
-      
+
     } else {
       $("nav").removeClass('navbar-dark').addClass('navbar-light');
     }
@@ -20,7 +20,7 @@ $(document).ready(function(){
   if($(window).scrollTop() >= 30){
     $("nav").addClass('navbar-dark').removeClass('navbar-light');
   }
-  
+
   /*
     Work portfolio
   */
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 
 
-  $(window).scroll(function() {    
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
      //>=, not <=
@@ -75,7 +75,10 @@ $(document).ready(function(){
     } else {
       $(".nav-transparent").removeClass("navbar-light").addClass("navbar-dark");
     }
-});
+  });
 
+  $('.navbar-nav>li>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+  });
 
 });

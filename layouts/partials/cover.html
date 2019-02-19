@@ -22,16 +22,24 @@
 <style type="text/css">
   .cover {
     margin-top: -80px;
-    height: 500px;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
     /*background: rgba(0,0,0,0.6);
     background-image: url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)),  url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
         background-position: center;
         background-attachment: fixed;
     background-size: cover;*/
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     /*animation: breath 25s ease-in-out infinite;*/
     background: linear-gradient(160deg, #9dc408 0%, #659723 100%);
+  }
+  @media (min-width: 992px) {
+    .cover {
+      padding-top: 150px !important;
+      padding-bottom: 150px !important;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    }
   }
 
   @keyframes breath {
